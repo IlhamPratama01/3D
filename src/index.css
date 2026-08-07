@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import 'tailwindcss';
+
+/* ─── Scrollbar ─────────────────────────────────────── */
+* { scrollbar-width: thin; scrollbar-color: #4a4a52 transparent; }
+*::-webkit-scrollbar { width: 3px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: #4a4a52; border-radius: 99px; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #040406;
+  color: #f2ede6;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Keyframes ─────────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes float-a {
+  0%,100% { transform: translateY(0px); }
+  50%     { transform: translateY(-10px); }
+}
+@keyframes float-b {
+  0%,100% { transform: translateY(0px); }
+  50%     { transform: translateY(-14px); }
+}
+@keyframes spin-cw  { to { transform: rotate(360deg); } }
+@keyframes spin-ccw { to { transform: rotate(-360deg); } }
+@keyframes fadeup {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Utility animations ────────────────────────────── */
+.anim-marquee  { animation: marquee 32s linear infinite; }
+.anim-float-a  { animation: float-a 6s ease-in-out infinite; }
+.anim-float-b  { animation: float-b 8s ease-in-out infinite; }
+.anim-glow     {}
+.anim-spin-cw  { animation: spin-cw 28s linear infinite; }
+.anim-spin-ccw { animation: spin-ccw 20s linear infinite; }
+.anim-fadeup   { animation: fadeup .6s ease forwards; }
+
+/* ─── Accent text ───────────────────────────────────── */
+.text-vio {
+  color: #c4a96a;
+}
+.text-grd {
+  background: linear-gradient(135deg, #c4a96a 0%, #d4bF8a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Glass surfaces ────────────────────────────────── */
+.glass {
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.07);
+}
+.glass-vio {
+  background: rgba(196,169,106,.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(196,169,106,.15);
+}
+
+/* ─── Glows (removed — using clean shadows) ─────────── */
+.glow-vio  { box-shadow: 0 4px 24px rgba(0,0,0,.4); }
+.glow-lime { box-shadow: 0 4px 20px rgba(0,0,0,.3); }
+.glow-sky  { box-shadow: 0 4px 20px rgba(0,0,0,.3); }
+
+/* ─── Background grid ───────────────────────────────── */
+.bg-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ─── Card lift ─────────────────────────────────────── */
+.card-lift {
+  transition: transform .3s cubic-bezier(.4,0,.2,1),
+              box-shadow .3s cubic-bezier(.4,0,.2,1),
+              border-color .3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  border-color: rgba(196,169,106,.3) !important;
+  box-shadow: 0 20px 48px rgba(0,0,0,.35);
+}
+
+/* ─── Primary button ────────────────────────────────── */
+.btn-neon {
+  background: #c4a96a;
+  transition: all .25s ease;
+  position: relative; overflow: hidden;
+}
+.btn-neon::before { display: none; }
+.btn-neon:hover {
+  background: #d4ba7e;
+  box-shadow: 0 8px 28px rgba(0,0,0,.35);
+  transform: translateY(-2px);
+}
+.btn-neon { color: #0b0b0f !important; }
+
+/* ─── Secondary button ──────────────────────────────── */
+.btn-lime {
+  background: transparent;
+  color: #f2ede6;
+  border: 1px solid rgba(255,255,255,.18);
+  transition: all .25s ease;
+}
+.btn-lime:hover {
+  background: rgba(255,255,255,.06);
+  border-color: rgba(255,255,255,.3);
+  transform: translateY(-2px);
+}
+
+/* ─── Nav underline ─────────────────────────────────── */
+.nav-ul {
+  position: relative;
+  transition: color .2s;
+}
+.nav-ul::after {
+  content: ''; position: absolute; bottom: -4px; left: 0;
+  width: 0; height: 1px;
+  background: #c4a96a;
+  transition: width .3s ease;
+}
+.nav-ul:hover::after { width: 100%; }
+
+/* ─── Label / tag ───────────────────────────────────── */
+.lbl {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+}
+
+/* ─── Bordered pill ─────────────────────────────────── */
+.border-run {
+  border: 1px solid rgba(196,169,106,.3);
+  background: rgba(196,169,106,.05);
+}

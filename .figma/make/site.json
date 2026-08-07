@@ -1,0 +1,10 @@
+{
+  "description": "Showcase your custom 3D models with a responsive landing page featuring a catalog, detailed descriptions, and links to purchase on Shopee and social media.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
