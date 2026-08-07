@@ -38,8 +38,9 @@ body {
 }
 
 header.glass {
-  background: rgba(4, 4, 6, 0.85); /* fallback jika blur gagal */
+  background: rgba(4, 4, 6, 0.85); 
 }
+
 /* ─── Utility animations ────────────────────────────── */
 .anim-marquee  { animation: marquee 32s linear infinite; }
 .anim-float-a  { animation: float-a 6s ease-in-out infinite; }
