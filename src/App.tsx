@@ -304,7 +304,7 @@ export default function App() {
       </div>
 
       {/* ════════════ NAV ════════════════════════════════ */}
-      <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? 'py-3 glass !border-0' : 'py-5 bg-transparent'}`}>
+      <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${scrolled ? 'py-3 glass backdrop-blur-xl !border-0' : 'py-5 bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
 
           {/* Logo */}
@@ -344,7 +344,7 @@ export default function App() {
         </div>
 
         {nav && (
-          <div className="md:hidden glass border-t border-white/5">
+          <div className="md:hidden bg-[#040406]/95 backdrop-blur-xl border-t border-white/10">
             <div className="max-w-7xl mx-auto px-5 py-5 flex flex-col gap-1">
               {[['#home','Home'],['#catalog','Katalog'],['#process','Cara Order'],['#reviews','Ulasan'],['#contact','Kontak']].map(([h,l]) => (
                 <a key={h} href={h} onClick={() => setNav(false)}
