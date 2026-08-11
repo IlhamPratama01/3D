@@ -480,7 +480,7 @@ export default function App() {
           <FadeUp className="mb-16">
             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
               <div>
-                <div className="lbl text-[#c4a96a] mb-3">// 006 Model Tersedia</div>
+                <div className="lbl text-[#c4a96a] mb-3">006 Model Tersedia</div>
                 <h2 className="font-black leading-[.9] tracking-tight"
                   style={{ fontFamily: "'Barlow Condensed',sans-serif", fontSize: 'clamp(2.4rem,6vw,5rem)' }}>
                   <span className="text-white">KATALOG</span><br />
@@ -615,7 +615,7 @@ export default function App() {
           <FadeUp className="mb-16">
             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
               <div>
-                <div className="lbl text-[#c4a96a]/70 mb-3">// Cara Kerja</div>
+                <div className="lbl text-[#c4a96a]/70 mb-3">Cara Kerja</div>
                 <h2 className="font-black leading-[.9] tracking-tight"
                   style={{ fontFamily: "'Barlow Condensed',sans-serif", fontSize: 'clamp(2.4rem,6vw,5rem)' }}>
                   <span className="text-white">ORDER</span>{' '}
@@ -664,7 +664,7 @@ export default function App() {
               <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
               <div className="relative z-10 px-8 sm:px-16 py-16 text-center">
-                <div className="lbl text-[#c4a96a] mb-5">// Custom Request</div>
+                <div className="lbl text-[#c4a96a] mb-5">Custom Request</div>
                 <h2 className="font-black leading-[.9] mb-6"
                   style={{ fontFamily: "'Barlow Condensed',sans-serif", fontSize: 'clamp(2rem,5vw,4rem)' }}>
                   <span className="text-white">PUNYA IDE MODEL </span>
@@ -698,7 +698,7 @@ export default function App() {
           <FadeUp className="mb-16">
             <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
               <div>
-                <div className="lbl text-[#c4a96a]/70 mb-3">// Ulasan Pelanggan</div>
+                <div className="lbl text-[#c4a96a]/70 mb-3">Ulasan Pelanggan</div>
                 <h2 className="font-black leading-[.9] tracking-tight"
                   style={{ fontFamily: "'Barlow Condensed',sans-serif", fontSize: 'clamp(2.4rem,6vw,5rem)' }}>
                   <span className="text-white">APA KATA</span><br />
@@ -755,7 +755,7 @@ export default function App() {
             {/* ── Write review form ── */}
             <FadeUp delay={100} className="lg:sticky lg:top-28">
               <div className="glass-vio rounded-[28px] p-6 sm:p-8 border border-white/10">
-                <div className="lbl text-[#c4a96a] mb-2">// Tulis Ulasanmu</div>
+                <div className="lbl text-[#c4a96a] mb-2">Tulis Ulasanmu</div>
                 <h3 className="font-black text-2xl text-white mb-6"
                   style={{ fontFamily: "'Barlow Condensed',sans-serif", letterSpacing: '-.01em' }}>
                   Udah Order? <span className="text-grd">Share!</span>
